@@ -62,11 +62,11 @@ mongoose.connect(process.env.MONGO_URL, {
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
     /* ONLY ADD DATA ONE TIME */
-    User.insertMany(dataUser);
-    Transaction.insertMany(dataTransaction);
-    Product.insertMany(dataProduct);
-    ProductStat.insertMany(dataProductStat);
-    OverallStat.insertMany(dataOverallStat);
-    AffiliateStat.insertMany(dataAffiliateStat);
+    // User.insertMany(dataUser);
+    // Transaction.insertMany(dataTransaction);
+    // Product.insertMany(dataProduct);
+    // ProductStat.insertMany(dataProductStat);
+    // OverallStat.insertMany(dataOverallStat);
+    // AffiliateStat.insertMany(dataAffiliateStat);
   })
   .catch((error) => console.log(`${error} did not connect`));
